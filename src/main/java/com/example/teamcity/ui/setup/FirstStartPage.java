@@ -12,7 +12,7 @@ public class FirstStartPage extends BasePage {
     private final SelenideElement proceedButton = $("#proceedButton");
     private final SelenideElement dbTypeSelect = $("#dbType");
     private final SelenideElement acceptLicenseCheckbox = $("#accept");
-    private final SelenideElement submitButton = $("input[type='submit']");
+    private final SelenideElement submitButton = $(".continueBlock > .submitButton");
 
     public FirstStartPage() {
         restoreButton.shouldBe(Condition.visible, LONG_WAITING);
